@@ -1,11 +1,11 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(180deg, black, red);
   padding: 0;
   margin: 0;
   font-family: Raleway;
   position: relative;
+  background: lightgrey;
 }
 
 .main-container {
@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   /* margin-bottom: 300px; Took this away becauase depending on the screen size, the footer would find itself in the middle of the page*/
-  padding-top: 300px;
+  padding-top: 200px;
 }
 
 .container {
@@ -22,10 +22,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 80px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .container2 {
-  color: white;
+  color: black;
 }
 
 .container3 {
@@ -37,26 +39,31 @@ body {
 .text-container {
   display: flex;
   justify-content: space-between;
-  width: 300px;
   padding-left: 10px;
   margin-bottom: 10px;
   align-items: flex-end;
-  color: white;
+  color: black;
+
+  width: 330px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .input {
   display: block;
   margin: 10px;
-  height: 30px;
-  width: 300px;
+
   border-radius: 5px;
   border: none;
+
+  width: 330px;
+  height: 40px;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 80px;
-  color: white;
+  color: black;
 }
 
 .text2 {
@@ -71,19 +78,21 @@ label {
 .button2,
 .button3 {
   padding: 5px 25px;
-  width: 300px;
-  height: 30px;
+
   font-weight: bold;
-  font-size: 15px;
   border: none;
   border-radius: 5px;
+
+  font-size: 18px;
+  width: 330px;
+  height: 60px;
 }
 
 .button1 {
   position: relative;
   left: 10px;
-  background-color: black;
   color: white;
+  background-color: red;
 }
 
 .button2 {
@@ -97,7 +106,7 @@ label {
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -107,58 +116,61 @@ footer {
   color: white;
   position: absolute;
   bottom: 0;
+  text-align: center;
+  font-size: 13px;
 }
 
-/* For mobile-view */
+/* For Desktop-view */
 
-@media (max-width: 830px) {
+@media (min-width: 830px) {
   .container {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    gap: 80px;
   }
 
   .button1,
   .button2,
   .button3 {
-    font-size: 18px;
-    width: 330px;
-    height: 60px;
+    font-size: 15px;
+    width: 300px;
+    height: 30px;
   }
 
   .input {
-    width: 330px;
-    height: 40px;
+    height: 30px;
+    width: 300px;
   }
 
   .text-container {
-    width: 330px;
+    width: 300px;
   }
 
   .button1 {
-    background-color: red;
+    background-color: black;
   }
 
   body {
-    background: lightgrey;
+    background: linear-gradient(180deg, black, red);
   }
 
   .container2,
   .text-container,
   h1,
   a {
-    color: black;
+    color: white;
   }
 
   .main-container {
-    padding-top: 200px;
+    padding-top: 300px;
   }
 
   footer {
-    text-align: center;
+    text-align: left;
+    font-size: 14px;
   }
 
   .text-container {
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
   }
 }
