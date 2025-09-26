@@ -59,11 +59,6 @@ h1 {
   color: white;
 }
 
-.text1 {
-  position: relative;
-  right: 40px;
-}
-.text1,
 .text2 {
   font-size: 13px;
 }
@@ -123,7 +118,7 @@ footer {
   .button1,
   .button2,
   .button3 {
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px 25px;
     width: 330px;
     height: 60px;
@@ -159,5 +154,10 @@ footer {
 
   footer {
     text-align: center;
+  }
+
+  .text-container {
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 }
