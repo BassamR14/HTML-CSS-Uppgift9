@@ -167,6 +167,7 @@ footer {
   footer {
     text-align: left;
     font-size: 14px;
+    padding-left: 10px;
   }
 
   .text-container {
