@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Raleway;
+  position: relative;
 }
 
 .main-container {
@@ -12,7 +13,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 300px;
+  /* margin-bottom: 300px; Took this away becauase depending on the screen size, the footer would find itself in the middle of the page*/
   padding-top: 300px;
 }
 
@@ -49,6 +50,7 @@ body {
   height: 30px;
   width: 300px;
   border-radius: 5px;
+  border: none;
 }
 
 h1 {
@@ -108,4 +110,54 @@ footer {
   width: 100vw;
   background-color: grey;
   color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .button1,
+  .button2,
+  .button3 {
+    font-size: 20px;
+    padding: 5px 25px;
+    width: 330px;
+    height: 60px;
+  }
+
+  .input {
+    width: 330px;
+    height: 40px;
+  }
+
+  .text-container {
+    width: 330px;
+  }
+
+  .button1 {
+    background-color: red;
+  }
+
+  body {
+    background: lightgrey;
+  }
+
+  .container2,
+  .text-container,
+  h1,
+  a {
+    color: black;
+  }
+
+  .main-container {
+    padding-top: 200px;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
