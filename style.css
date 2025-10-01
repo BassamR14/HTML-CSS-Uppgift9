@@ -44,15 +44,6 @@ footer {
   gap: 80px;
 }
 
-main {
-  /* flex-grow: 1; */
-}
-
-.rando,
-.firstcontainer footer {
-  flex-shrink: 0;
-}
-
 .container2 {
   color: white;
 }
