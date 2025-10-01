@@ -1,5 +1,5 @@
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: linear-gradient(180deg, black, red);
   padding: 0;
@@ -10,11 +10,31 @@ body {
 
 .main-container {
   display: flex;
+  height: 100%;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 600px; Took this away becauase depending on the screen size, the footer would find itself in the middle of the page*/
+  /* padding-top: 300px; */
+  /* min-height: 100vh; */
+}
+
+.firstcontainer {
+  display: flex;
+  flex: column;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 300px; Took this away becauase depending on the screen size, the footer would find itself in the middle of the page*/
-  padding-top: 300px;
+  flex-grow: 1;
+  /* padding-top: 300px; */
+}
+
+footer {
+  width: 100%;
+  background-color: grey;
+  color: white;
+  /* position: absolute; */
+  bottom: 0;
+  padding-left: 10px;
 }
 
 .container {
@@ -22,6 +42,15 @@ body {
   justify-content: center;
   align-items: center;
   gap: 80px;
+}
+
+main {
+  /* flex-grow: 1; */
+}
+
+.rando,
+.firstcontainer footer {
+  flex-shrink: 0;
 }
 
 .container2 {
@@ -101,13 +130,10 @@ a {
   text-decoration: none;
 }
 
-footer {
-  width: 100vw;
-  background-color: grey;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  padding-left: 10px;
+.rando {
+  width: 100px;
+  height: 1000px;
+  background-color: white;
 }
 
 /* For mobile-view */
